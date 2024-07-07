@@ -1,0 +1,130 @@
+/* Fixation du Comportement de la page */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style de base de notre page */
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+    position: relative;
+}
+
+/* Partie Barre de navigation */
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Partie Logo */
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+/* Partie Menu ou liens de la navbar */
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: orange;
+}
+
+/* Partie Hero */
+
+.hero{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.hero h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+span{
+    color: orange;
+}
+.hero p{
+    color: #555;
+    line-height: 22px;
+}
+/* STyle du boutton download cv */
+.hero a {
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.hero a:hover{
+    background: orange;
+}
+
+/* Partie Image */
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+/* STYLES DES DIFFERENTS IMAGES */
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+/* animation des images */
+
+.images:hover .shape{
+    bottom: 40px;
+
+}
+
+.images:hover .man{
+    left: 45%;
+}
+
+.socials{
+    margin-left: 8%;
+    margin-top: 10px;
+}
+
+.socials a{
+    font-size: 30px;
+    color: #212121;
+    margin-right: 15px;
+}
+
+.socials a:hover{
+    color: orange;
+}
